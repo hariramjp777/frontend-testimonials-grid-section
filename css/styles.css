@@ -1,3 +1,5 @@
+/* css variables for colors */
+
 :root {
   --violet: hsl(263, 55%, 52%);
   --dark-grayish-blue: hsl(217, 19%, 35%);
@@ -7,6 +9,8 @@
   --light-grayish-blue: hsl(210, 46%, 95%);
   --link: #007bff;
 }
+
+/* css resets */
 
 * {
   margin: 0;
@@ -24,15 +28,17 @@ html {
   font-size: 62.5%;
 }
 
+/* body bg-color and font */
+
 body {
   background-color: var(--light-grayish-blue);
   font-family: "Barlow Semi Condensed", sans-serif;
 }
 
+/* main - grid section and its absolute in large devices */
+
 main {
   width: 79%;
-  /* height: 55rem; */
-  /* border: 0.1rem solid blue; */
   position: absolute;
   top: 50%;
   left: 50%;
@@ -42,6 +48,8 @@ main {
   grid-template-rows: 1fr 1fr;
   grid-gap: 2rem;
 }
+
+/* sections inside main - all 5 sections */
 
 main .section {
   padding: 3rem 3rem;
@@ -53,6 +61,8 @@ main .section {
   animation-duration: 0.2s;
   animation-timing-function: linear;
 }
+
+/* profile inside section is also grid */
 
 main .section .profile {
   display: grid;
@@ -77,6 +87,8 @@ main .section .profile p {
   align-self: center;
 }
 
+/* title and review */
+
 main .section .title {
   color: var(--white);
   font-weight: 600;
@@ -92,6 +104,8 @@ main .section .review {
   line-height: 1.5;
   font-size: 1.385rem;
 }
+
+/* sections - bgcolor, grid position and animation-delay */
 
 main .section:nth-child(1) {
   background-color: var(--violet);
@@ -124,6 +138,8 @@ main .section:nth-child(5) {
   animation-delay: 4s;
 }
 
+/* text color for white background section */
+
 main .section:nth-child(3) .title,
 main .section:nth-child(5) .title {
   color: var(--dark-blackish-blue);
@@ -137,10 +153,14 @@ main .section:nth-child(5) .review {
   color: var(--dark-grayish-blue);
 }
 
+/* setting z-index for 1st section since bg-pattern comes */
+
 main .section:nth-child(1) > * {
   position: relative;
   z-index: 1;
 }
+
+/* bg pattern */
 
 main .section:nth-child(1)::before {
   content: "";
@@ -153,6 +173,8 @@ main .section:nth-child(1)::before {
   top: 0;
   right: 10rem;
 }
+
+/* attribution */
 
 .attribution {
   position: absolute;
@@ -180,6 +202,8 @@ main .section:nth-child(1)::before {
 .attribution a:nth-child(2) {
   padding-left: 1rem;
 }
+
+/* media queries */
 
 @media (max-height: 696px) {
   main {
@@ -219,6 +243,8 @@ main .section:nth-child(1)::before {
     right: 2rem;
   }
 }
+
+/* keyframes for simple animation - appear */
 
 @keyframes appear {
   100% {
