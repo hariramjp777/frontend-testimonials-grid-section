@@ -55,7 +55,7 @@ main .section {
   padding: 3rem 3rem;
   border-radius: 0.8rem;
   box-shadow: 0 0 4rem rgb(204, 236, 240);
-  opacity: 0;
+  /* opacity: 0; */
   animation-name: appear;
   animation-fill-mode: forwards;
   animation-duration: 0.2s;
