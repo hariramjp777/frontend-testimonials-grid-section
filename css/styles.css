@@ -178,7 +178,7 @@ main .section:nth-child(1)::before {
 
 .attribution {
   position: absolute;
-  bottom: 1rem;
+  bottom: 1.5rem;
   text-align: center;
   font-family: sans-serif;
   font-size: 1.3rem;
@@ -205,7 +205,7 @@ main .section:nth-child(1)::before {
 
 /* media queries */
 
-@media (max-height: 696px) {
+@media (max-height: 747px) {
   main {
     position: static;
     transform: none;
@@ -213,7 +213,7 @@ main .section:nth-child(1)::before {
   }
   .attribution {
     position: static;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
@@ -225,7 +225,7 @@ main .section:nth-child(1)::before {
   }
   .attribution {
     position: static;
-    margin-bottom: 3rem;
+    padding-bottom: 3rem;
   }
 }
 
